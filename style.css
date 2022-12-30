@@ -1,0 +1,111 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+img{
+    height: 1000px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+}
+.header {
+    position: absolute;
+    /* top: 450px; */
+    top: 50%;
+    left: 50%;
+    /* left: 686px; */
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+}
+
+.row {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 20px 30px;
+    font-size: 24px;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s  ; 
+}  
+.row.active{
+    opacity: 1;
+    transform: scale(1);
+}
+/* section 2 up to down */
+.section2{
+    display:flex ;
+    text-align: center;
+    padding: 20px 30px;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: bolder;
+    font-style: italic;  
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: all 1s ease-in;
+}
+.section2.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+/* section 3 start here  */
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+.section3{
+    display: flex;
+    text-align: center;
+    padding: 20px 30px;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: bolder;
+    opacity: 0;
+    transform: translateY(0) ;
+    transition: all 1s;
+}
+.section3.down{
+    opacity: 1;
+    transform: translateY(-50px);
+}
+.section4{
+    display: flex;
+    text-align: center;
+    padding: 20px 30px;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: bolder; 
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 1s;
+}
+.section4.right{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.section5{
+    display: flex;
+    text-align: center;
+    padding: 20px 30px;
+    justify-content: space-around;
+    font-size: 24px;
+    font-weight: bolder;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s;
+}
+.section5.left{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
